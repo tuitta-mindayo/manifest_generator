@@ -15,7 +15,7 @@ const manifest = `{
             "version": [0, 0, 1]
         }
     ]
-}`
+}`;
 const button = document.getElementById('button');
 button.addEventListener('click', pushButton1);
 button.addEventListener('click', pushButton2);
