@@ -1,4 +1,4 @@
-{
+const rManifest = `{
     "format_version": 2,
     "header": {
         "description": "アドオンの説明文",
@@ -15,4 +15,6 @@
             "version": [0, 0, 1]
         }
     ]
-}
+}`;
+
+export {rManifest}
