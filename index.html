@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manifest_Gen</title>
 </head>
+
 <body>
   <div class="buttonArea">
-    <button type="button" id="button">送信</button><br />
+    アドオン名：<input type="text" id="name"><br />
+    アドオン説明文：<input type="text" id="description"><br />
+    <form id="addonType">
+      アドオン種類：
+      <select name="select"><br />
+        <option value="resources">リソースパック</option>
+        <option value="data">ビヘイビアパック</option>
+        <option value="script">スクリプト</option>
+        <option value="world_template">ワールドテンプレート</option>
+      </select><br />
+    </form>
+    <form id="minVersion">
+      アドオン最小バージョン：
+      <select name="select"><br />
+        <option value="1.21.50">1.21.50</option>
+        <option value="1.21.0">1.21.0</option>
+        <option value="1.20.50">1.20.50</option>
+        <option value="1.20.0">1.20.0</option>
+        <option value="1.19.50">1.19.50</option>
+        <option value="1.19.0">1.19.0</option>
+        <option value="1.18.50">1.18.50</option>
+        <option value="1.18.0">1.18.0</option>
+        <option value="1.17.50">1.17.50</option>
+        <option value="1.17.0">1.17.0</option>
+        <option value="1.16.50">1.16.50</option>
+      </select><br />
+    </form>
+    <button type="button" id="make">作成！</button><br />
   </div>
   <script src="index.js" charset="utf-8" type="module"></script>
 </body>
+
 </html>
