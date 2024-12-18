@@ -18,6 +18,7 @@ function makeFile() {
     //make array
     let version = minVersion.select.value.split(".");
 
+    let jsonData = "";
     //update json
     if(addonType.select.value == "script")
     {
