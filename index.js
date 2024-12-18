@@ -19,7 +19,14 @@ function makeFile() {
     let version = minVersion.select.value.split(".");
 
     //update json
-    let jsonData = JSON.parse(rManifest);
+    if(addonType.select.value == "script")
+    {
+      jsonData = JSON.parse(scriptManifest);
+    }
+    else
+    {
+      jsonData = JSON.parse(normalManifest);
+    }
     
     //header
     jsonData.header.name = name.value;
