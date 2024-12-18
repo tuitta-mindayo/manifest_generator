@@ -1,5 +1,5 @@
 //import data
-import { rManifest } from "./data.js";
+import { normalManifest, scriptManifest } from "./data.js";
 
 //getElements
 const name = document.getElementById('name');
